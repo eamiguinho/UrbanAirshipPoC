@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#FF0000</item>
+    <item name="colorPrimaryDark">#FF2200</item>
+    <item name="colorAccent">#0000FF</item>
+    <item name="windowActionModeOverlay">true</item>
+	<item name="messageCenterStyle">@style/AppTheme.MessageCenter</item>
+  </style>
+
+
+<style name="AppTheme.MessageCenter" parent="MessageCenter">
+     <item name="messageCenterDividerColor">#44000000</item>
+     <item name="messageCenterItemIconEnabled">true</item>
+     <item name="messageCenterItemTitleTextAppearance">@style/AppTheme.MessageCenter.TitleTextAppearance</item>
+     <item name="messageCenterItemDateTextAppearance">@style/AppTheme.MessageCenter.DateTextAppearance</item>
+ </style>
+
+ <!-- Custom message title text style -->
+ <style name="AppTheme.MessageCenter.TitleTextAppearance" parent="MessageCenter.Item.Title.TextAppearance">
+     <item name="android:textSize">30sp</item>
+     <item name="android:textStyle">italic</item>
+     <item name="android:textColor">#FF0000</item>
+ </style>
+
+ <!-- Custom message date text style -->
+ <style name="AppTheme.MessageCenter.DateTextAppearance" parent="MessageCenter.Item.Date.TextAppearance">
+     <item name="android:textSize">10sp</item>
+ </style>
+	
+<!-- Custom in-app message style -->
+<style name="AppBannerStyle" parent="InAppMessage.Banner">
+   <item name="cardElevation">20dp</item>
+   <item name="bannerPrimaryColor">#ff990f</item>
+   <item name="bannerSecondaryColor">#334455</item>
+   <item name="bannerNoDismissButton">false</item>
+   <item name="bannerTextAppearance">@style/AppBannerTextAppearance</item>
+   <item name="bannerActionButtonTextAppearance">@style/AppBannerActionButtonTextAppearance</item>
+</style>
+
+<!-- Custom in-app message text style -->
+<style name="AppBannerTextAppearance" parent="InAppMessage.Banner.TextAppearance">
+   <item name="android:textSize">30sp</item>
+   <item name="android:textStyle">italic</item>
+</style>
+
+<!-- Custom in-app message action button text style -->
+<style name="AppBannerActionButtonTextAppearance" parent="InAppMessage.Banner.TextAppearance">
+   <item name="android:textSize">18sp</item>
+</style>
+</resources>

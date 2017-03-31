@@ -1,0 +1,16 @@
+bin/
+obj/
+*.suo
+*.user
+*.DotSettings
+*.userprefs
+.irb-history
+.DS_Store
+packages
+.idea/
+deploy/ios/Gemfile.lock
+*.orig
+.vs/
+/**/Resource.Designer.cs
+*.ncrunch*
+.*crunch*.local.xml
